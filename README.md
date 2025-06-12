@@ -81,6 +81,12 @@ We've provided the API functionality in `src/api/todoApi.ts`. The API includes m
 - `deleteTodo(id: number)`: Delete a todo by ID
 - `toggleTodo({ id, completed }: TodoToggle)`: Toggle todo completion status
 
+You can view the API documentation at:
+
+- [Swagger Documentation](https://eli-workshop.vercel.app/api-docs)
+
+**Note:** The URLs in the Swagger documentation do not exactly match the ones used in this project. The Swagger shows generic endpoints like `/api/todos`, while in our implementation we're using user-specific endpoints `/api/users/eli-intern/todos`. Use the Swagger for understanding the data models and response structures, but refer to the `todoApi.ts` file for the correct endpoints used in this project.
+
 ## 📚 Useful Resources
 
 - [React Documentation](https://react.dev/learn)
