@@ -58,7 +58,7 @@ export const TodosSection = () => {
       {error && (
         <ErrorMessage message={error} onDismiss={() => setError(null)} />
       )}
-      <TodoForm handleCreateTodo={handleCreateTodo} />
+      <TodoForm onCreate={handleCreateTodo} />
       <div className="todo-container">
         {loading ? (
           <Spinner />
