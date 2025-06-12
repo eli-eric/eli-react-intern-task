@@ -1,15 +1,11 @@
 import { useState } from 'react'
 
-type TodoFormProps = {
-  onCreate: (todoText: string) => void
-}
-export const TodoForm = ({ onCreate }: TodoFormProps) => {
+export const TodoForm = () => {
   const [todoText, setTodoText] = useState('')
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // TODO: Implementace přidání nového úkolu pomoci handleCreateTodo
-    onCreate('Sample Todo Text')
+    // TODO: Implementace přidání nového úkolu pomoci onCreate
   }
 
   return (
