@@ -6,7 +6,6 @@ type TodoFormProps = {
 export const TodoForm = ({ handleCreateTodo }: TodoFormProps) => {
   const [todoText, setTodoText] = useState('')
 
-  // Funkce kterou stážista implementuje
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     // TODO: Implementace přidání nového úkolu pomoci handleCreateTodo
